@@ -1,3 +1,6 @@
 [submodule "ESCAPE"]
 	path = ESCAPE
 	url = https://github.com/rarchambault/ESCAPE.git
+[submodule "project-group-02"]
+	path = project-group-02
+	url = https://github.com/McGill-ECSE321-Fall2022/project-group-02
