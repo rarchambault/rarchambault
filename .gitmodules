@@ -1,0 +1,3 @@
+[submodule "ESCAPE"]
+	path = ESCAPE
+	url = https://github.com/rarchambault/ESCAPE.git
