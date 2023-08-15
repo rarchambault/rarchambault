@@ -1,0 +1,31 @@
+{
+  "DiveSafe": {
+    "startDate": "2022-01-13",
+    "numDays": 20,
+    "priceOfGuidePerDay": 50,
+    "guides": [
+      ""
+    ],
+    "members": [
+      ""
+    ],
+    "itemBookings": [
+      ""
+    ],
+    "equipments": [
+      ""
+    ],
+    "bundles": [
+      ""
+    ],
+    "bundleItems": [
+      ""
+    ],
+    "hotels": [
+      ""
+    ],
+    "assignments": [
+      ""
+    ]
+  }
+}

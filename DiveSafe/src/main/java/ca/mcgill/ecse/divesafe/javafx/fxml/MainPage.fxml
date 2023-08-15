@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane maxWidth="1.7976931348623157E308" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Register">
+               <content>
+                  <fx:include source="pages/registerMember.fxml" />
+               </content>
+            </Tab>
+            <Tab text="View Assignments">
+               <content>
+                  <fx:include source="pages/ViewAssignments.fxml" />
+               </content>
+            </Tab>
+            <Tab text="Payments">
+               <content>
+                  <fx:include source="pages/MemberPayment.fxml" />
+               </content>
+            </Tab>
+           <Tab text="Trip">
+               <content>
+                  <fx:include source="pages/StartTripPage.fxml" />
+               </content></Tab>
+            <Tab text="Delete/Update ">
+               <content>
+                  <fx:include source="pages/UpdateDeleteMember.fxml" />
+               </content>
+            </Tab>
+           
+         </tabs>
+      </TabPane>
+   </children>
+</VBox>

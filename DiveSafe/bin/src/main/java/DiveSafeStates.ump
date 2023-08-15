@@ -1,0 +1,100 @@
+class Assignment{
+  status{
+    Assigned{
+      pay(String email, String authorizationCode) [Member.hasWithEmail(email) != null && Member.hasWithEmail(email).authorizationCode == authorizationCode && Member.getStatus() != Banned] / {
+        Administrator.assignPaid(email, authorizationCode)
+      }
+      -> Paid;
+      
+      
+      cancel(String email) [Member.hasWithEmail(email) != null && Member.getStatus() != Banned] /{cancelAssignment(email)}
+      -> Cancelled;
+      
+      finish(String email) / {rejectFinishNotPaid()}
+      -> Assigned;
+      
+    }
+    
+    Paid{
+      
+      start(String email) [Member.getStatus() != Banned] / {startAssignment}
+      -> Started;
+      
+      cancel(String email) [Member.hasWithEmail(email) != null && Member.getStatus() != Banned] / {cancelAssignment(email)}
+      -> Cancelled;
+      
+      finish(String email) / {rejectFinishNotStarted()}
+      -> Paid;
+      
+      pay(String email) / {rejectPayAlreadyPaid()}
+      -> Paid;
+    }
+    
+    Started{
+      
+      pay(String email) / {rejectPayAlreadyPaid()}
+      -> Started;
+      
+      finish(String email) [Member.getStatus() != Banned] / {finishAssignment}
+      -> Finished;
+      
+      cancel(String email) [Member.getStatus() != Banned] / {cancelAssignment}
+      -> Cancelled;
+      
+    }
+    
+    Finished{
+      pay(String email) / {rejectPayFinished()}
+      -> Finished;
+      
+      start(String email) / {rejectStartFinished()}
+      -> Finished;
+      
+      cancel(String email) / {rejectCancelFinished()}
+      -> Finished;
+    }
+    
+    Cancelled{
+      pay(String email) / {rejectPayCancelled()}
+      -> Cancelled;
+      
+      start(String email) / {rejectStartCancelled()}
+      -> Cancelled;
+      
+      finish(String email) / {rejectFinishCancelled()}
+      -> Cancelled;
+      
+    }
+    
+  }
+  
+}
+
+
+class Guide{
+  state {
+    available{
+      assignMember(Member member, int day) [member!= null] / {members.add(member, day)} -> unavailable;
+    }
+    unavailable{
+      cancelTrip [assignedMember.state.cancelledTrip] / {members.remove(assignedMember)}
+      -> available;
+    }
+  }
+}
+
+class Member{
+  status{
+    NotBanned{
+      ban -> Banned;
+    }
+    
+    Banned{
+    }
+    
+    
+    
+  }
+  
+  
+}

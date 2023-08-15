@@ -1,0 +1,225 @@
+class Assignment{
+  
+  AssignmentStatus{
+    Assigned{
+      pay(String email, String authorizationCode) / {
+        acceptPay(authorizationCode);
+      }
+      -> Paid;
+      
+      
+      cancel(String email) /{cancelAssignment();}
+      -> Cancelled;
+      
+      finish(String email) / {rejectFinishNotStarted();}
+      -> Assigned;
+      
+      start(String email) / {AssignmentController.toggleBan(email);} -> Cancelled;
+      
+    }
+    
+    Paid{
+      
+      start(String email)
+      -> Started;
+      
+      cancel(String email) / {cancelAssignmentWith50Refund();}
+      -> Cancelled;
+      
+      finish(String email) / {rejectFinishNotStarted();}
+      -> Paid;
+      
+      pay(String email) / {rejectPayAlreadyPaid();}
+      -> Paid;
+    }
+    
+    Started{
+      
+      pay(String email) / {rejectPayAlreadyPaid();}
+      -> Started;
+      
+      finish(String email)
+      -> Finished;
+      
+      cancel(String email) / {cancelAssignmentWith10Refund();}
+      -> Cancelled;
+      
+    }
+    
+    Finished{
+      pay(String email) / {rejectPayFinished();}
+      -> Finished;
+      
+      start(String email) / {rejectStartFinished();}
+      -> Finished;
+      
+      cancel(String email) / {rejectCancelFinished();}
+      -> Finished;
+    }
+    
+    Cancelled{
+      pay(String email) / {rejectPayCancelled();}
+      -> Cancelled;
+      
+      start(String email) / {rejectStartCancelled();}
+      -> Cancelled;
+      
+      finish(String email) / {rejectFinishCancelled();}
+      -> Cancelled;
+      
+    }
+    
+  }
+  
+  	/**
+	 * Called when the payment confirmation goes through and sets the assignment's
+	 * authorizationCode to the one that was entered.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 * 
+	 * @param authorizationCode
+	 */
+  public void acceptPay(String authorizationCode){
+  	this.authorizationCode = authorizationCode;
+  }
+  
+  	/**
+	 * Called when an assignment is cancelled before the member paid their trip;
+	 * sets the assignment's refund to 0.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+  public void cancelAssignment(){
+    refund = "0";
+  }
+  
+  	/**
+	 * Called when an assignment is cancelled after the member has paid their trip;
+	 * sets the assignment's refund to 50 (50%).
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+    public void cancelAssignmentWith50Refund(){
+      refund = "50";
+  }
+  
+  	/**
+	 * Called when an assignment is cancelled after the member has started their
+	 * trip; sets the assignment's refund to 10 (10%).
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+    public void cancelAssignmentWith10Refund(){
+      refund = "10";
+  }
+  
+  	/**
+	 * Called when the administrator tries to finish an assignment which has not
+	 * started; throws appropriate Runtime exception.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+  public void rejectFinishNotStarted(){
+    throw new RuntimeException("Cannot finish a trip which has not started");
+  }
+  
+  	/**
+	 * Called when the administrator tries to confirm payment for an assignment
+	 * which has already been paid; throws appropriate Runtime exception.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+  public void rejectPayAlreadyPaid(){
+    throw new RuntimeException("Trip has already been paid for");
+  }
+  
+  	/**
+	 * Called when the administrator tries to confirm payment for an assignment
+	 * which is finished; throws appropriate Runtime exception.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+  public void rejectPayFinished(){
+    throw new RuntimeException("Cannot pay for a trip which has finished");
+  }
+  
+  	/**
+	 * Called when the administrator tries to start an assignment which has
+	 * finished; throws appropriate Runtime exception.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+  public void rejectStartFinished(){
+    throw new RuntimeException("Cannot start a trip which has finished");
+  }
+  
+  	/**
+	 * Called when the administrator tries to cancel an assignment which has
+	 * finished; throws appropriate Runtime exception.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+  public void rejectCancelFinished(){
+    throw new RuntimeException("Cannot cancel a trip which has finished");
+  }
+  
+  	/**
+	 * Called when the administrator tries to confirm payment for an assignment
+	 * which has been cancelled; throws appropriate Runtime exception.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+  public void rejectPayCancelled(){
+    throw new RuntimeException("Cannot pay for a trip which has been cancelled");
+  }
+  
+  	/**
+	 * Called when the administrator tries to start an assignment which has been
+	 * cancelled; throws appropriate Runtime exception.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+  public void rejectStartCancelled(){
+    throw new RuntimeException("Cannot start a trip which has been cancelled");
+  }
+  
+  	/**
+	 * Called when the administrator tries to finish an assignment which has been
+	 * cancelled; throws appropriate Runtime exception.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 */
+  public void rejectFinishCancelled(){
+    throw new RuntimeException("Cannot finish a trip which has been cancelled");
+  }
+  
+}
+
+
+class Member{
+  MemberStatus{
+    NotBanned{
+      toggleMemberStatus()
+      -> Banned;
+    }
+    
+    Banned{
+      toggleMemberStatus() / {rejectUnban();}
+      -> Banned;
+    }
+    
+  }
+  
+  	/**
+	 * Called when the administrator tries to unban a Banned member; throws
+	 * appropriate Runtime eror.
+	 * 
+	 * @author rarchambault (Roxanne Archambault)
+	 * 
+	 * @param authorizationCode
+	 */
+  public String rejectUnban(){
+    throw new RuntimeException("Cannot unban a banned member");
+  }
+  
+}

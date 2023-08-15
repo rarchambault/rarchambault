@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="555.0" style="-fx-background-color: #45A1FF #45A1FF #45A1FF #45A1FF #45A1FF #45A1FF #45A1FF #45A1FF;" vgap="5.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.divesafe.javafx.fxml.controllers.ViewAssignmentsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="282.7999755859375" prefWidth="282.7999755859375" />
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="133.3999816894531" prefWidth="191.59996337890624" />
+    <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="238.19996337890632" prefWidth="279.60003662109375" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="321.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="assignmentTable" maxWidth="1.7976931348623157E308" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+      <Button fx:id="AssignmentButton" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#AssignmentButtonClicked" style="-fx-background-color: #03859c #03859c; -fx-border-color: #000000 #000000; -fx-border-width: 1 px; -fx-border-radius: 2px;" text="Click me!" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label text="Please click this button to view assignments ------&gt;" textFill="WHITE" GridPane.rowIndex="1" />
+      <Button fx:id="initiateAssignmentButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#initiateAssignmentsClicked" style="-fx-background-color: #03859c #03859c; -fx-border-color: #000000 #000000; -fx-border-width: 1 px; -fx-border-radius: 2px;" text="Click me!" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="287.0" text="Please click the button to initiate assignments-----&gt;" textFill="WHITE" />
+      <GridPane hgap="5.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000 #000000; -fx-border-radius: 2px; -fx-border-width: 1 px;" vgap="5.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="121.00001220703125" minWidth="114.59998779296875" prefWidth="120.2000244140625" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.60001220703126" minWidth="143.19998779296876" prefWidth="143.9999755859375" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints minHeight="-Infinity" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="65.20000495910645" vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" text="Color Codes for Assignment Status" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Assigned" GridPane.rowIndex="2" />
+            <Label text="Paid" GridPane.rowIndex="3" />
+            <Label text="Started" GridPane.rowIndex="4" />
+            <Label text="Finished" GridPane.rowIndex="5" />
+            <Label text="Cancelled" GridPane.rowIndex="6" />
+            <Label text="Cancelled due to ban" GridPane.rowIndex="7" />
+            <Label fx:id="AssignedLabel" text="[Member Name]" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="PaidLabel" text="[Member Name]" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="StartedLabel" text="[Member Name]" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="FinishedLabel" text="[Member Name]" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="CancelledLabel" text="[Member Name]" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="CancelledBanLabel" text="[Member Name] (banned)" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
