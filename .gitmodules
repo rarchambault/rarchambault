@@ -7,3 +7,12 @@
 [submodule "RoboDuckies"]
 	path = RoboDuckies
 	url = https://github.com/WassimJabz/RoboDuckies.git
+[submodule "McKrillCroesus"]
+	path = McKrillCroesus
+	url = https://github.com/rarchambault/McKrillCroesus.git
+[submodule "McKrillWebMobile"]
+	path = McKrillWebMobile
+	url = https://github.com/rarchambault/McKrillWebMobile.git
+[submodule "pong-game"]
+	path = pong-game
+	url = https://github.com/rarchambault/pong-game.git

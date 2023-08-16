@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ESCAPE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/McKrillCroesus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/McKrillWebMobile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RoboDuckies" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pong-game" vcs="Git" />
+  </component>
+</project>
