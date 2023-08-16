@@ -10,9 +10,9 @@ Welcome to my portfolio!
 
 🔎 Proficient in C#, Java, C, Python, and more
 
-💎 Passionate about using logic and creativity to solve complex problems efficiently
+💎 Passionate about using logic and creativity to solve complex problems
 
-🚀 Interested in literature, arts, music, space exploration and a lot of various topics!
+🚀 Interested in literature, arts, music, space exploration and various other topics!
 
 ## About this portfolio
 
