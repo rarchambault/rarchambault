@@ -6,33 +6,29 @@ Welcome to my portfolio!
 
 ## About me
 
-⚙️ Software Engineering student with 3 years of experience including 2 internships
+⚙️ Software Engineering student with 3 years of experience including 3 internships
+
+🔮 Interested in AR/VR graphical application development; current experience in development using Unity Engine and HoloLens2
 
 🔎 Proficient in C#, Java, C, Python, and more
 
 💎 Passionate about using logic and creativity to solve complex problems
 
-🚀 Interested in literature, arts, music, space exploration and various other topics!
+🚀 Interested in space exploration and operations,literature, arts, music, and various other topics!
 
 ## About this portfolio
 
-I have included here all the major projects I have worked on; feel free to go explore them to understand them in more detail! 
+I have included here all the major projects I have worked on in my career so far; feel free to go explore them to understand them in more detail! 
 
-### 🏊‍♀️ [**DiveSafe**](https://github.com/rarchambault/rarchambault/tree/main/DiveSafe)
+### 🤖 [**Engineering Games Machine Competition 2023-2024**](https://github.com/MachineMGCIL/2023machine)
 
-This project, completed as part of the course ECSE223 Model-Based Programming in a team of 6 people, is a system meant for managing a resort where people can book diving expeditions with guides, rent equipment and plan their trip.
+This is a robotics project completed to compete in the Machine challenge of the January 2024 Quebec Engineering Games, which is a robotics challenge to be completed over 4 months and showcased at the Games. I was the co-VP Machine for this edition of the competition, meaning I was in charge of the team of 6-20 people (several people contributed to the project, but only a core of 6 people was allowed to work on the robot at the Games. This year's challenge was to build a Mars rover able to pick up plastic balls and place them in tall silos by crossing a 12' x 8' map under an 8" tall platform. The robot runs using a Raspberry Pi using Python code and sereval DC, stepper and servo motors as well as a vacuum to pick up balls.
+
+**Note**: The repository for this project is not public yet; however, you can find pictures and reports my team completed [**here**]().
 
 ### 🎭 [**ESCAPE**](https://github.com/rarchambault/ESCAPE/tree/5987d63d12b7c01f064cbe07d0400a38787f277b)
 
 This web application exposes a REST API interface and uses a Vue.js frontend and a PostgreSQL relational database to provide a website for the McGill Engineering Socials Committee, allowing users to purchase tickets for events and post pictures and messages about them. This was a group project completed in a team of 10 people as part of the course ECSE428 Software Engineering Practice.
-
-### 💵 [**McKrillCroesus**](https://github.com/rarchambault/McKrillCroesus/tree/92515c36b338004adab835f31641d464c24b5dad)
-
-This project, completed as part of the 2023 Computer Science Games, was a challenge to optimize stock market transactions based on a given API and given stock prices. This was completed in a team of two and my team won 5th place for this challenge!
-
-### 🏝 [**McKrillWebMobile**](https://github.com/rarchambault/McKrillWebMobile/tree/37378a742dd76b0c4fd735b63865201db3a58b63)
-
-This project was completed as part of the 2023 Computer Science Games where I implemented, in a team of two people, to implement a web application with a given API. This web application runs on C# and Maui and provides weather information for a paradise island.
 
 ### 🏛 [**Museum Software System**](https://github.com/rarchambault/rarchambault/tree/main/Museum%20Software%20System)
 
@@ -43,6 +39,18 @@ This project, completed in a team of 6 people as part of the course ECSE321 Intr
 This project, completed in a team of 6 people as part of the course ECSE211 Design Principles and Methods, was a robot using a Raspberry Pi and Lego motors and sensors to place foam cubes into a mosaic following an input pattern.
 
 **Note**: The repository for this project is not public yet.
+
+### 🏊‍♀️ [**DiveSafe**](https://github.com/rarchambault/rarchambault/tree/main/DiveSafe)
+
+This project, completed as part of the course ECSE223 Model-Based Programming in a team of 6 people, is a system meant for managing a resort where people can book diving expeditions with guides, rent equipment and plan their trip.
+
+### 💵 [**McKrillCroesus**](https://github.com/rarchambault/McKrillCroesus/tree/92515c36b338004adab835f31641d464c24b5dad)
+
+This project, completed as part of the 2023 Computer Science Games, was a challenge to optimize stock market transactions based on a given API and given stock prices. This was completed in a team of two and my team won 5th place for this challenge!
+
+### 🏝 [**McKrillWebMobile**](https://github.com/rarchambault/McKrillWebMobile/tree/37378a742dd76b0c4fd735b63865201db3a58b63)
+
+This project was completed as part of the 2023 Computer Science Games where I implemented, in a team of two people, to implement a web application with a given API. This web application runs on C# and Maui and provides weather information for a paradise island.
 
 ### 🏓 [**Pong Game**](https://github.com/rarchambault/pong-game/tree/a6492840e369a51ea266919d5d78d3f7fe41b061)
 
