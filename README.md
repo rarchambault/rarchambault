@@ -20,11 +20,11 @@ Welcome to my portfolio!
 
 I have included here all the major projects I have worked on in my career so far; feel free to go explore them to understand them in more detail! 
 
-### 🤖 [**Engineering Games Machine Competition 2023-2024**](https://github.com/MachineMGCIL/2023machine)
+### 🤖 [**Engineering Games Machine Competition 2023-2024**](https://github.com/rarchambault/rarchambault/tree/main/Machine2024)
 
 This is a robotics project completed to compete in the Machine challenge of the January 2024 Quebec Engineering Games, which is a robotics challenge to be completed over 4 months and showcased at the Games. I was the co-VP Machine for this edition of the competition, meaning I was in charge of the team of 6-20 people (several people contributed to the project, but only a core of 6 people was allowed to work on the robot at the Games. This year's challenge was to build a Mars rover able to pick up plastic balls and place them in tall silos by crossing a 12' x 8' map under an 8" tall platform. The robot runs using a Raspberry Pi using Python code and sereval DC, stepper and servo motors as well as a vacuum to pick up balls.
 
-**Note**: The repository for this project is not public yet; however, you can find pictures and reports my team completed [**here**]().
+**Note**: The [**repository**](https://github.com/MachineMGCIL/2023machine) for this project is not public yet.
 
 ### 🎭 [**ESCAPE**](https://github.com/rarchambault/ESCAPE/tree/5987d63d12b7c01f064cbe07d0400a38787f277b)
 
