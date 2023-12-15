@@ -20,6 +20,10 @@ Welcome to my portfolio!
 
 I have included here all the major projects I have worked on in my career so far; feel free to go explore them to understand them in more detail! 
 
+### 🌟 [**HoloMOTS Demo**](https://github.com/rarchambault/rarchambault/tree/main/HoloMOTS%20Demo)
+
+During my internship at the Canadian Space Agency in Fall 2023, I have participated in an intern poster competition which was a presentation to CSA employees to showcase what I did during my internship. Along with my paper poster, I also built a demo application using Unity and C# scripting so that people could try manipulating holograms with the HoloLens2 headset. I cannot provide the code for this application not for the real application I was working on, but you can find a recording I took from the HoloLens2 headset [**here**](https://github.com/rarchambault/rarchambault/blob/main/HoloMOTS%20Demo/AR%20Poster%20Demonstration.mp4) as well as my [**PDF poster**](https://github.com/rarchambault/rarchambault/blob/main/HoloMOTS%20Demo/HoloMOTS%20Poster%20-%20Roxanne%20Archambault.pdf).
+
 ### 🤖 [**Engineering Games Machine Competition 2023-2024**](https://github.com/rarchambault/rarchambault/tree/main/Machine2024)
 
 This is a robotics project completed to compete in the Machine challenge of the January 2024 Quebec Engineering Games, which is a robotics challenge to be completed over 4 months and showcased at the Games. I was the co-VP Machine for this edition of the competition, meaning I was in charge of the team of 6-20 people (several people contributed to the project, but only a core of 6 people was allowed to work on the robot at the Games. This year's challenge was to build a Mars rover able to pick up plastic balls and place them in tall silos by crossing a 12' x 8' map under an 8" tall platform. The robot runs using a Raspberry Pi using Python code and sereval DC, stepper and servo motors as well as a vacuum to pick up balls.
