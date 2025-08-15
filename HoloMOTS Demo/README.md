@@ -1,0 +1,5 @@
+# HoloMOTS Demo
+
+During my internship at the Canadian Space Agency in Fall 2023, I have worked on a mixed reality simulator called HoloMOTS which is used for astronaut training to manipulate the Canadarm2 as if they were on the International Space Station. This was a graphical application using the Unity game engine and C# scripting, and it was designed to be deployed on HoloLens2 headsets.
+
+At the end of my internship, I participated in an intern poster competition where I designed a [**poster**](https://github.com/rarchambault/rarchambault/blob/main/HoloMOTS%20Demo/HoloMOTS%20Poster%20-%20Roxanne%20Archambault.pdf) to showcase my work on the virtual hand controllers used to manipulate the Canadarm2. I have also built a demo application for people to try manipulating the holograms using the HoloLens2 headset; a [**recording**](https://github.com/rarchambault/rarchambault/blob/main/HoloMOTS%20Demo/AR%20Poster%20Demonstration.mp4) which I took from the headset is included here along with my presentation (**note**: you will probably have to download the recording in order to view it since it is a rather large file).
