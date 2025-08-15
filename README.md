@@ -22,9 +22,9 @@ I have included here all the major projects I have worked on in my career so far
 
 ### 💫 [**Holoportation**](https://github.com/alex8ndr/Holoportation)
 
-This project, begun as my capstone project in a team of 4 people in Fall 2024 and continued individually as my internship in Summer 2025 with the Canadian Space Agency, aims to reconstruct objects in 3D in real-time and stream this on a HoloLens headset. This is done using Orbbec Femto RGB-D cameras, a C++ and C# Windows application, TCP networking, and a Unity application in C# for the final HoloLens rendering. A document detection feature also leverages OpenCV techniques (and/or a YOLO machine learning model) to detect and segment documents from color frames. Some 3D modelling was also used to model a calibration cube object to merge data from each camera. A [**video demonstration**]() and a [**PDF poster**]() are also included here for a better overview.
+This project, begun as my capstone project in a team of 4 people in Fall 2024 and continued individually as my internship in Summer 2025 with the Canadian Space Agency, aims to reconstruct objects in 3D in real-time and stream this on a HoloLens headset. This is done using Orbbec Femto RGB-D cameras, a C++ and C# Windows application, TCP networking, and a Unity application in C# for the final HoloLens rendering. A document detection feature also leverages OpenCV techniques (and/or a YOLO machine learning model) to detect and segment documents from color frames. Some 3D modelling was also used to model a calibration cube object to merge data from each camera. A [**video demonstration**](https://github.com/rarchambault/rarchambault/blob/main/Holoportation/Poster%20Demo%20Full.mov) and a [**PDF poster**](https://github.com/rarchambault/rarchambault/blob/main/Holoportation/Holoportation_Poster_Roxanne_Archambault_full.pdf) are also included here for a better overview.
 
-### 🦠 [**NucleiSegmentorDetector**]()
+### 🦠 [**NucleiSegmentorDetector**](https://github.com/rarchambault/rarchambault/tree/main/NucleiSegmentorDetector)
 
 This project, completed in a team of 5 people as part of the course ECSE415 Introduction to Computer Vision, applies several computer vision techniques to detect and locate nuclei from medical images in the context of cancer diagnosis and treatment. Unsupervised (k-means clustering, normal cut) and supervised (random forest) learning techniques are used for segmentation, and feature extraction and SVMs are used for detection and counting, all using Python in a Jupyter notebook. The following [**presentation**](https://www.canva.com/design/DAGj0pvUWj4/QvcouV3L4Bz2pZO8vkCcJA/edit?utm_content=DAGj0pvUWj4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) gives more details about this.
 
@@ -32,17 +32,17 @@ This project, completed in a team of 5 people as part of the course ECSE415 Intr
 
 This project, completed in a team of 4 people as part of the course ECSE420 Parallel Computing, is a simple implementation of a particle simulator in C using OpenGL graphics which was meant to compare sequential and parallel computing techniques for increasing numbers of particles. Sequential execution, CPU threading and GPU threading with NVidia CUDA and OpenCL are the different techniques evaluated; these can be visualized easily by changing an enum variable. The following [**presentation**](https://www.canva.com/design/DAGjaQn522w/CTqXg2F9WV-9F6TfN0z25A/edit?utm_content=DAGjaQn522w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) also gives more information about this, including some video demos.
 
-### 🧶 [**PatternCreator**]()
+### 🧶 [**PatternCreator**](https://github.com/rarchambault/rarchambault/tree/main/PatternCreator)
 
 This project allows creating patterns for tapestry crochet or knitting by using a Python script to turn any image into a pixelated image made of squares of K colors, with K being a customizeable variable, and outputting an Excel workbook with one tab containing the image's squares, and a second tab containing each row and the numbers of squares of each color to complete, in order, for each one (like a knitting or crochet pattern). The actual pattern tab is populated by an Excel script. An example input and output are provided in the directory.
 
-### 🧪 [**ECSE429-Project**]()
+### 🧪 [**ECSE429-Project**](https://github.com/rarchambault/rarchambault/tree/main/ECSE429-Project)
 
 This project, completed as part of the course ECSE429 Software Validation, is a set of tests in Java meant to validate the performance of a sample TODO list-maker application called "REST API TODO Manager" (the .jar file is included in the directory). Exploratory testing, unit tests and story tests were all implemented to evaluate this application.
 
-### 🚀 [**MUSE Gamescom**]()
+### 🚀 **MUSE Gamescom**
 
-This project, completed in a team of 5 European Space Agency professionals, was completed as part of my internship at ESA in Summer 2024 in Cologne for the Gamescom convention as a gamified demonstration meant to the greater public to careers in space. It represents a 3-minute launch and re-entry experience programmed in C with Unreal Engine for Meta Quest 3 where users are placed in a fictional European crewed vehicle which gets launched into space, reaches low-Earth orbit (where some objects start floating around in micro-gravity and can be grabbed and thrown!) and comes back to Earth surrounded by plasma until it splashes down in an ocean. The actual code for this project cannot be shared on this platform, but a [**video demo**]() is provided.
+This project, completed in a team of 5 European Space Agency professionals, was completed as part of my internship at ESA in Summer 2024 in Cologne for the Gamescom convention as a gamified demonstration meant to the greater public to careers in space. It represents a 3-minute launch and re-entry experience programmed in C with Unreal Engine for Meta Quest 3 where users are placed in a fictional European crewed vehicle which gets launched into space, reaches low-Earth orbit (where some objects start floating around in micro-gravity and can be grabbed and thrown!) and comes back to Earth surrounded by plasma until it splashes down in an ocean. The actual code for this project cannot be shared on this platform, unfortunately.
 
 ### 🌟 [**HoloMOTS Demo**](https://github.com/rarchambault/rarchambault/tree/main/HoloMOTS%20Demo)
 
